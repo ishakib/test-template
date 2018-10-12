@@ -95,20 +95,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-.header-top{background: #FFFFFF;}
+body{margin: 0, padding:0;}
+/*Top Navbar*/
+.header-top{height: 128px ; background: #FFFFFF;}
 .header-top ul{padding: 60px;}
 
+/*2nd Navbar*/
+
 .header-bottom{background: #BE2426;}
+.header-bottom ul{}
+.header-bottom ul li{}
+.header-bottom ul li a{color: #fff;}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav li{
+      float: none;
+      display: inline-block;
+    }
+ .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+      background: #B42426;
+  }
 
-#myCarousel{max-height: 3200px;}
-.item img{max-height: 300px; width: 100%;}
+  .affix + .container-fluid {
+      padding-top: 70px;
+  } 
 
+/*------Banner--------*/
+.banner .item{width: 100%; height: 550px;}
+
+/*---------Features------*/
 .section-features h2{text-align: center; font-size: 25px; padding-top: 20px;}
 hr{width: 12%;}
 
 
 /*----------digital portfolio-----------*/
+
+.section-portfolio{ background: #F1F1F1 }
+
 
 /* ---- button ---- */
 
@@ -194,22 +222,35 @@ hr{width: 12%;}
 /*------What we offer-------*/
 
     /*top section*/
+
 .section-whatweoffer{}
-.offer{}
-.top{width: 100%;}
+.card{
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .bg {
   background-image: url("../img/bg3.png");
   background-position: center;
   background-repeat: no-repeat;
   min-height: 550px;
 }
+.bg h2{
+  color: #fff; 
+  text-align: center; 
+}
 
-.top h2{color: #fff; text-align: center; padding: 120px 0px;}
-
-.card{background: #fff; padding: 15px 5px; margin-bottom: 15px;}
+.card{
+  background: #fff; 
+  padding: 15px 5px; 
+  margin-bottom: 15px;
+}
 .card-body{}
-.card-body h2{}
-.card-body a{}
+.card-body h3{}
+.card-body p{text-align: justify;padding: 5px;}
+.card .btn{text-align: center;}
+
+
 
 
       /*middle section*/
@@ -229,6 +270,10 @@ hr{width: 12%;}
 #btn1{background: #CD2121; color: #fff;}
 #btn2{background: #B7B7B7;}
 
+.pc1{}
+.pc1 img{width: 75%; margin-left: 80px;}
+
+
       /*bottom section*/
 
 
@@ -239,14 +284,7 @@ hr{width: 12%;}
 .section-ourblog{width: 100%; }
 
 .bg2 span{background: black;}
-.bg2 {
-  background-image: url("../img/bg2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 280px;
-  opacity: 0.50;
-}
+
 
 
 /*------Our Blog----*/
@@ -255,8 +293,58 @@ hr{width: 12%;}
 .owl-dots{display: none;}
 .card-body p{width: 100%}
 
+/*-----footer section*---*/
 
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  margin: 5px 2px;
+  background: transparent;
+  color: #fff;
+}
 
+.fa:hover {
+    opacity: 0.7;
+}
+.footer{
+  background-image: url("../img/bg4.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 370px;
+}
+.footer-item{
+}
+.footer-item:before{
+  content: "";
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.75);
+
+}
+.footer-data{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.footer-data a{}
+.footer-data a img{width: 10%; background: transparent !important;}
+.footer-data h3{
+  color: #fff;
+}
+.footer-data p{
+  color: #fff;
+}
+.footer-copyright {
+    background: #2B2B2B;
+    padding: 25px 0px;
+}
+.footer-copyright p{
+  color: #fff;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
