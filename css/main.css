@@ -823,18 +823,19 @@ font-size: 20px;
    Resposive Section
    ========================================================================== */
 @media (min-width: 576px) {
+  
 
 
 }
 
 @media (min-width: 768px) {
-
+.footer-item{height: 650px;} 
 
 } 
 
 @media (min-width: 992px) {
 
- .header-top{min-height: 100px;}
+
 
 
 }
