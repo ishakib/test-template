@@ -95,21 +95,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-*{margin: 0; padding: 0;outline: 0;}
+*{margin: 0px; padding: 0px;outline: 0px;}
 body{font-family: arial;}
 
 
-/*Top Navbar*/
+
 .header-top {
     width: 100%;
-    min-height: 100px;
     background: #FFFFFF;
+    text-align: center;
+    padding-top: 33px;
+
 }
-.header-top ul{
-  display: inline-block;
+.header-top img{
+
 }
-.header-top ul a{
-  text-decoration: none;  
+.header-top a {
+      padding-right: 30px;  
+}  
+.header-top a p{
+    color: red;  
+    display: inline-block;
+}
+.navbar button{
+    background: red;
+}
+#nav-logo{
+  width: 35%;
 }
 
 /*2nd Navbar*/
@@ -118,25 +130,22 @@ body{font-family: arial;}
 #navbar-id ul{}
 #navbar-id ul li{}
 #navbar-id ul li a{color: #fff; font-size: 20px;}
-#navbar-id ul li a:hover{background:#ddd; color:#000;}
-
+#navbar-id ul li a:hover{
+  text-decoration: underline;
+}
 .navbar-nav {
     width: 100%;
-    text-align: center;
 }
 .navbar-nav li{
-      float: none;
-      display: inline-block;
-    }
+
+}
 .affix {
       top: 0;
       width: 100%;
       z-index: 9999 !important;
       background: #B42426;
 }
-.affix + .container-fluid{
-      padding-top: 70px;
-  } 
+
 
 
 
@@ -161,7 +170,7 @@ body{font-family: arial;}
 #section-features h2 {
 
     text-align: center;
-    padding-bottom: 20px;
+
 
 }
 .features-section {
@@ -191,7 +200,6 @@ body{font-family: arial;}
     color: red;
     font-size: 50px;
     padding-top: 20px;
-
 }
 
 /*----------digital portfolio-----------*/
@@ -816,13 +824,18 @@ font-size: 20px;
    ========================================================================== */
 @media (min-width: 576px) {
 
+
 }
 
 @media (min-width: 768px) {
 
-}
+
+} 
 
 @media (min-width: 992px) {
+
+ .header-top{min-height: 100px;}
+
 
 }
 
