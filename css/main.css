@@ -570,7 +570,7 @@ font-size: 10px;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 1050px;
+    height: 855px;
    
 }
 .footer-item:before{
@@ -630,6 +630,9 @@ font-size: 20px;
 .flicker-item h1{}
 .flicker-item a{} 
 .flicker-item img { 
+  width:120px; 
+  height:80px;
+  padding: 2px;
 }
 .footer-copyright {
     background: #2B2B2B;
